@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println("starting webhook server")
 	http.HandleFunc("/", WebhookServer)
 	http.ListenAndServe(":8080", nil)
 }
